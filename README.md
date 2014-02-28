@@ -134,3 +134,16 @@ protected void initGUI() {
 	...
 }
 ```
+
+#### etard test
+```java
+public class CodingTest {
+  @Test
+  public void encodingWorks() {
+    String payload = "a\t\n\retard\nvalue";
+    String encoded = Coding.encode(payload);
+    Assert.assertEquals("a_~t__~n__~r_etard_~n_value", encoded);
+    ...
+  }
+}
+```
