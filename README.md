@@ -1,6 +1,3 @@
-Beautiful-code-best-practice-enterprise-patterns
-================================================
-
 12 years of "TODO"
 ```java
 /**
