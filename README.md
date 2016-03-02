@@ -1,4 +1,15 @@
-#### Ruined by success
+#### Alice in GridResultsPublisher
+```java
+public class GridResultsPublisher {
+  ...
+  public void alice(Subscription sub) {
+
+  }
+  ...
+}
+```
+
+#### Exceptional success
 ```java
 Caused by: com.latencybusters.lbm.LBMEOSException: CoreApi-5688-3231: 
 TCP server bind (port=20120): (0) The operation completed successfully.
