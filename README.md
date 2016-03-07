@@ -10,7 +10,7 @@ public static int type(Object x) {
                           : x instanceof Float ? -8
                               : x instanceof Double ? -9
                                   : x instanceof Character ? -10
-// ...
+                                      // ...
 }
 ```
 
