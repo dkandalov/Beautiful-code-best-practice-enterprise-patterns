@@ -1,3 +1,19 @@
+#### Ternary return
+```java
+public static int type(Object x) {
+  return x instanceof Boolean ? -1
+      : x instanceof UUID ? -2
+          : x instanceof Byte ? -4
+              : x instanceof Short ? -5
+                  : x instanceof Integer ? -6
+                      : x instanceof Long ? -7
+                          : x instanceof Float ? -8
+                              : x instanceof Double ? -9
+                                  : x instanceof Character ? -10
+// ...
+}
+```
+
 #### Alice in GridResultsPublisher
 ```java
 public class GridResultsPublisher {
