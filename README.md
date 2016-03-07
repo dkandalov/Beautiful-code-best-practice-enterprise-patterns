@@ -31,7 +31,20 @@ Caused by: com.latencybusters.lbm.LBMEOSException: CoreApi-5688-3231:
 TCP server bind (port=20120): (0) The operation completed successfully.
 ```
 
-#### 12 years of "TODO"
+#### Etard
+```java
+public class CodingTest {
+  @Test
+  public void encodingWorks() {
+    String payload = "a\t\n\retard\nvalue";
+    String encoded = Coding.encode(payload);
+    Assert.assertEquals("a_~t__~n__~r_etard_~n_value", encoded);
+    ...
+  }
+}
+```
+
+#### Birthtimestamp of "TODO"
 ```java
 /**
  * Insert the method's description here.
@@ -41,7 +54,7 @@ TCP server bind (port=20120): (0) The operation completed successfully.
 public void setHierarchy(com.xxxx.xxxxxxxx.reporting.xxxxx.api.datasource.Hierarchy newHierarchy) {
 ```
 
-#### check if object turned into null
+#### Suddenly nullable
 ```java
 log.debug("allFeeds: " + allFeeds.size()); 
 if (allFeeds == null)                      
@@ -50,7 +63,7 @@ if (allFeeds == null)
 }
 ```
 
-#### concrete code
+#### Import embargo
 ```java
 if (userObject instanceof com.xxxx.xxxxxxxx.reporting.xxxxx.api.datasource.Dimension) {
    id = ((com.xxxx.xxxxxxxx.reporting.xxxxx.api.datasource.Dimension) userObject).getID();
@@ -58,7 +71,7 @@ if (userObject instanceof com.xxxx.xxxxxxxx.reporting.xxxxx.api.datasource.Dimen
 }
 ```
 
-#### definitely not null
+#### Definitely not null
 ```java
 if (ds != null) {                                                      
    if (ds != null && ds.getID() != null) {                                                     
@@ -66,7 +79,7 @@ if (ds != null) {
    }
 ```
 
-#### documented API
+#### Captain Obvious getter
 ```java
 /**
  * A convenience method to return "name" attribute.
@@ -76,7 +89,7 @@ if (ds != null) {
 public String getName();
 ```
 
-#### documented constructors
+#### Captain Obvious constructor
 ```java
 /**
  * QueryEngineTest constructor comment.
@@ -84,7 +97,7 @@ public String getName();
 public QueryEngineTest(...)
 ```
 
-#### enterprise TDD best practice pattern
+#### Enterprise TDD best practices pattern
 ```java
 @Test
 public void testModel()
@@ -93,7 +106,7 @@ public void testModel()
 }
 ```
 
-#### second phase of understanding
+#### Second phase of understanding
 ```java
 boolean secondPhase = false; //this variable is unnecessary but
 // aids understanding
@@ -116,7 +129,7 @@ if (secondPhase) {
 }
 ```
 
-#### string layout
+#### String layout
 ```java
 selectionPanel.add(new JLabel("COB : ", JLabel.RIGHT));
 selectionPanel.add(datePicker);
@@ -129,12 +142,12 @@ selectionPanel.add(refreshButton);
 selectionPanel.add(new JLabel("     ", JLabel.RIGHT));
 ```
 
-#### true string
+#### True string
 ```java
 id = (Integer) rData.getTagSetID(getSelectedDataSource(),  tags, Boolean.parseBoolean("true"));
 ```
 
-#### waiting sleeping beauty
+#### Waiting sleeping beauty
 ```java
 // while Refresh is in progress, donot return to the caller, wait until the
 // refresh finishes, so that user will surely no there is no refresh
@@ -153,7 +166,7 @@ catch (Exception e)
 }
 ```
 
-#### yield UI
+#### Yield UI
 ```java
 protected void initGUI() {
 	Thread.yield();
@@ -165,18 +178,5 @@ protected void initGUI() {
 	FeedMappingPanel mappingPanel = new FeedMappingPanel();
 	FeedUserPanel userPanel = new FeedUserPanel();
 	...
-}
-```
-
-#### etard test
-```java
-public class CodingTest {
-  @Test
-  public void encodingWorks() {
-    String payload = "a\t\n\retard\nvalue";
-    String encoded = Coding.encode(payload);
-    Assert.assertEquals("a_~t__~n__~r_etard_~n_value", encoded);
-    ...
-  }
 }
 ```
