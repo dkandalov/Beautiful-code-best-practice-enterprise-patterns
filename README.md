@@ -1,3 +1,13 @@
+#### Best Practice Null Formatting
+```java
+public FXRateData getLiveBookFXRate() {
+  FXRateData ret = null ;
+
+
+  return ret ;
+}
+```
+
 #### Ternary return
 ```java
 public static int type(Object x) {
